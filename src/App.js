@@ -37,6 +37,7 @@ class App extends React.Component {
   }
 
   render() {
+    // adding a throw-away comment 
     return (
       <div className='App'>
         <div className='menu-container'>
