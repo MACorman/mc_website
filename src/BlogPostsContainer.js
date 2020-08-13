@@ -42,8 +42,8 @@ class BlogPostContainer extends React.Component {
                             {this.state.posts.map(post => <BlogPostCard {...post} />)}
                         </Slider>
                         <div className='blog-nav'>
-                            <ButtonBack style={{border: 'none', outline: 'none', backgroundColor: 'white', marginRight: '150px', paddingTop: '4px'}}><FontAwesomeIcon icon={faAngleLeft} color={'black'} size={'3x'}/></ButtonBack>
-                            <ButtonNext style={{border: 'none', outline: 'none', backgroundColor: 'white', marginLeft: '150px', paddingTop: '4px'}}><FontAwesomeIcon icon={faAngleRight} color={'black'} size={'3x'}/></ButtonNext>
+                            <ButtonBack className='back-btn'><FontAwesomeIcon icon={faAngleLeft} color={'black'} size={'3x'}/></ButtonBack>
+                            <ButtonNext className='next-btn'><FontAwesomeIcon icon={faAngleRight} color={'black'} size={'3x'}/></ButtonNext>
                         </div>
                     </CarouselProvider>
                 :
