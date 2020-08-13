@@ -268,7 +268,8 @@ a:hover {
 
 .project-img {
   height: 280px;
-  width: auto
+  width: auto;
+  padding-bottom: 2%
 }
 
 .project-nav {
@@ -288,6 +289,80 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: fit-content
+}
+
+.back-btn {
+  border: none;
+  outline: none;
+  background-color: white;
+  margin-right: 150px;
+}
+
+.next-btn {
+  border: none;
+  outline: none;
+  background-color: white;
+  margin-left: 150px;
+}
+
+@media (max-width: 900px) {
+ .logo-initials {
+   width: 8%;
+   padding-top: 2%;
+   padding-left: 2%;
+   height: auto
+ }
+
+ .headshot {
+   height: auto;
+   width: 30em;
+   margin-left: auto;
+   margin-right: auto;
+   
+ }
+
+ .about-container {
+  display: block; 
+  margin-top: 5%
+   
+ 
+ }
+
+ .about-content {
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 5%;
+   padding-right: 5%;
+   
+ }
+
+ .headshot-container {
+   /* margin-top: auto;
+   margin-bottom: auto; */
+   width: fit-content;
+   margin-left: auto;
+   margin-right: auto;
+  
+  
+ }
+
+}
+
+@media (max-width: 600px) {
+  .headshot {
+    height: auto;
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .blog-img {
+    height: 300px;
+    width: auto;
+    margin-bottom: 2%;
+  }
+
 }
 
 @media (max-width: 400px) {
@@ -356,7 +431,7 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-    margin-top: 18%;
+    margin-top: 8%;
   }
 
   .project-body {
@@ -382,6 +457,20 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-    margin-top: 19%;
+    margin-top: 9%;
+  }
+
+  .back-btn {
+    border: none;
+    outline: none;
+    background-color: white;
+    margin-right: 100px;
+  }
+  
+  .next-btn {
+    border: none;
+    outline: none;
+    background-color: white;
+    margin-left: 100px;
   }
  }
