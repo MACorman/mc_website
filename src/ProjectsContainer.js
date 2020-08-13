@@ -23,7 +23,7 @@ class ProjectsContainer extends React.Component {
                     <Slider>
                         {projects.map(p => <ProjectCard {...p} />)}
                     </Slider>
-                    <div style={{marginLeft: 'auto', marginRight: 'auto', width: 'fit-content', paddingTop: '2%'}}>
+                    <div className='project-nav'>
                         <ButtonBack style={{border: 'none', outline: 'none', backgroundColor: 'white', marginRight: '150px'}}><FontAwesomeIcon icon={faAngleLeft} color={'black'} size={'3x'}/></ButtonBack>
                         <ButtonNext style={{border: 'none', outline: 'none', backgroundColor: 'white', marginLeft: '150px'}}><FontAwesomeIcon icon={faAngleRight} color={'black'} size={'3x'}/></ButtonNext>
                     </div>

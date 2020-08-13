@@ -10,17 +10,20 @@ class ProjectCard extends React.Component {
             <Slide>
                 {/* <div className='project-slide'> */}
                     <h3 className='project-title'>{this.props.name}</h3>
-                    <div className='project-graphic'>
-                        {this.props.demo ? <YouTube className='youtube-embed' videoId={this.props.demo} opts={{height: '300', width: '500'}}/> : <img src={this.props.image} style={{height: '280px', width: 'auto'}}/>}
-                    </div>
-                    <div className='project-desc'>
-                        <p>{this.props.description}</p>
-                    </div>
-                    <div className='project_code_links'>
-                        <a href={this.props.frontend} target="_blank">Frontend</a>
-                        <span> | </span>
-                        <a href={this.props.backend} target="_blank">Backend</a>
-                        {this.props.url && <div><a href={this.props.url} target="_blank">Live</a></div>}
+                    <div className='project-body'>
+                        <div className='project-graphic'>
+                            {this.props.demo ? <YouTube className='youtube-embed' videoId={this.props.demo}/> : <img className='project-img' src={this.props.image}/>}
+                        </div>
+                        <div className='project-desc'>
+                            <p>{this.props.description}</p>
+                        </div>
+                        <div className='project_code_links'>
+                            <a href={this.props.frontend} target="_blank">Frontend</a>
+                            <span> | </span>
+                            <a href={this.props.backend} target="_blank">Backend</a>
+                            {this.props.url && <div><a href={this.props.url} target="_blank">Live</a></div>}
+                        </div>
+
                     </div>
                 {/* </div> */}
             </Slide>
