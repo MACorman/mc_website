@@ -138,12 +138,9 @@ a:hover {
   text-align: center;
 }
 
-/* .resume {
-  text-decoration: none;
-  color: black;
-  font-size: 1.1em;
-  font-weight: bold;
-} */
+.resume {
+  padding-bottom: 2%;
+}
 
 /* .resume:hover {
   color: grey
