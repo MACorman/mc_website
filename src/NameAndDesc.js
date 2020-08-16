@@ -5,7 +5,7 @@ function NameAndDesc() {
         <>
             <div className='home'>
                 <img className='name-logo' src="./logo_transparent_background.png"/>
-                <p className='subtitle'>A full stack software engingeer dedicated to building beautiful, effective solutions.</p>
+                <p className='subtitle'>A full stack software engineer dedicated to building beautiful, effective solutions.</p>
             </div>
             {/* <h1>Madeline Corman</h1> */}
         </>
