@@ -343,6 +343,13 @@ a:hover {
   
  }
 
+ .blog-img {
+  height: 400px;
+  width: 700px;
+  object-fit: cover;
+  margin-bottom: 2%;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -356,7 +363,8 @@ a:hover {
 
   .blog-img {
     height: 300px;
-    width: auto;
+    width: 540px;
+    object-fit: cover;
     margin-bottom: 2%;
   }
 
