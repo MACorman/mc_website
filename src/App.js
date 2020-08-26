@@ -42,7 +42,7 @@ class App extends React.Component {
       <div className='App'>
         <div className='menu-container'>
           {/* <div className='hamburger-container'> */}
-            <FontAwesomeIcon className='hamburger' icon={faBars} onClick={() => this.setState({showMenu: true})} size='2x'/>
+          <FontAwesomeIcon className='hamburger' icon={faBars} onClick={() => this.setState({showMenu: true})} size='2x'/>
           {/* </div> */}
           <Menu 
             open={this.state.showMenu}
@@ -50,6 +50,7 @@ class App extends React.Component {
             anchorOrigin={{ vertical: "top", horizontal: "right" }}
             transformOrigin={{ vertical: "top", horizontal: "right" }}
           >
+            <FontAwesomeIcon style={{float: 'right', paddingRight: '11%', border: 'none', outline: 'none'}}icon={faTimes} onClick={() => this.setState({showMenu: false})}/>
             <MenuItem onClick={() => this.setState({display: 'home', showMenu: false})} >Home</MenuItem>
             <MenuItem onClick={() => this.setState({display: 'about', showMenu: false})} >About</MenuItem>
             <MenuItem onClick={() => this.setState({display: 'projects', showMenu: false})} >Projects</MenuItem>
@@ -57,7 +58,7 @@ class App extends React.Component {
             <MenuItem onClick={() => this.setState({display: 'contact', showMenu: false})} >Contact</MenuItem>
           </Menu>
         </div>
-        <div onClick={() => this.setState({showMenu: false})}>
+        <div className='app-body-div' onClick={() => this.setState({showMenu: false})}>
         <img className='logo-initials' onClick={() => this.setState({display: 'home'})} src="./mc_favicon.png" />
           {this.displayedScreen()}
         </div>
