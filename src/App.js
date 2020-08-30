@@ -40,7 +40,7 @@ class App extends React.Component {
     // adding a throw-away comment 
     return (
       <div className='App'>
-        <div className='menu-container'>
+        <div className='hamburger-menu-container'>
           {/* <div className='hamburger-container'> */}
           <FontAwesomeIcon className='hamburger' icon={faBars} onClick={() => this.setState({showMenu: true})} size='2x'/>
           {/* </div> */}
@@ -57,6 +57,18 @@ class App extends React.Component {
             <MenuItem onClick={() => this.setState({display: 'blog', showMenu: false})} >Blog</MenuItem>
             <MenuItem onClick={() => this.setState({display: 'contact', showMenu: false})} >Contact</MenuItem>
           </Menu>
+        </div>
+        <div className='nav-menu-container'>
+          <span className='img-span'>
+            <img onClick={() => this.setState({display: 'home'})} src="./mc_favicon.png" />
+          </span>
+          <span className='nav-span'>
+            <span className='nav-span-item' onClick={() => this.setState({display: 'home', showMenu: false})}>Home</span>
+            <span className='nav-span-item' onClick={() => this.setState({display: 'about', showMenu: false})}>About</span>
+            <span className='nav-span-item' onClick={() => this.setState({display: 'projects', showMenu: false})}>Project</span>
+            <span className='nav-span-item' onClick={() => this.setState({display: 'blog', showMenu: false})}>Blog</span>
+            <span className='nav-span-item' onClick={() => this.setState({display: 'contact', showMenu: false})}>Contact</span>
+          </span>
         </div>
         <div className='app-body-div' onClick={() => this.setState({showMenu: false})}>
         <img className='logo-initials' onClick={() => this.setState({display: 'home'})} src="./mc_favicon.png" />

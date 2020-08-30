@@ -8,7 +8,7 @@ class ProjectCard extends React.Component {
     render() {
         return (
             <Slide>
-                {/* <div className='project-slide'> */}
+                <div className='project-slide'>
                     <h3 className='project-title'>{this.props.name}</h3>
                     <div className='project-body'>
                         <div className='project-graphic'>
@@ -25,7 +25,7 @@ class ProjectCard extends React.Component {
                         </div>
 
                     </div>
-                {/* </div> */}
+                </div>
             </Slide>
         )
     }
